@@ -1,5 +1,10 @@
 package com.geekbrains;
 
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.internal.RequestSpecificationImpl;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -15,6 +20,20 @@ import static org.hamcrest.Matchers.is;
 public class ImgurApiTest {
 
     private static int commentId;
+
+    void common() {
+
+        RequestSpecification requestSpecification = new RequestSpecBuilder()
+                .build();
+
+        ResponseSpecification responseSpecification = new ResponseSpecBuilder()
+                .build();
+
+        given()
+                .spec(requestSpecification)
+                .response()
+                .spec(responseSpecification);
+    }
 
     @Test
     @DisplayName("Получение информации об аккаунте")

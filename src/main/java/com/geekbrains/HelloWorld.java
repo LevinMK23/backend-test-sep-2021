@@ -11,6 +11,17 @@ public class HelloWorld {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100000000);
         }
+
+        User user = User.builder()
+                .name("Ivan")
+                .surname("Ivanov")
+                .birthDate("23.06.1990")
+                .build();
+
+        User user1 = new UserBuilder()
+                .setName("Ivan")
+                .setSurname("Ivanov")
+                .build();
     }
 
     public int foo() {
