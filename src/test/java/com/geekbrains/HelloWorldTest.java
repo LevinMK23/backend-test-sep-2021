@@ -1,8 +1,12 @@
 package com.geekbrains;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.stream.Stream;
 
+import com.geekbrains.retrofit.api.MiniMarketService;
+import com.geekbrains.retrofit.model.ProductDto;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer;
@@ -12,6 +16,8 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -23,6 +29,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class HelloWorldTest {
 
     private HelloWorld helloWorld;
+    private static MiniMarketService miniMarketService;
+
+    @BeforeAll
+    static void beforeAll() {
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://localhost:8189/market/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        miniMarketService = retrofit.create(MiniMarketService.class);
+    }
 
     private static Stream<Arguments> data() {
         return Stream.of(
@@ -39,9 +57,11 @@ class HelloWorldTest {
     @Test
     @DisplayName("Тест функции foo")
     @Order(value = 1)
-    void testFoo() {
+    void testFoo() throws IOException {
         assertEquals(1, helloWorld.foo());
         System.out.println(1);
+        ProductDto dto = miniMarketService.getProduct(1).execute().body();
+        System.out.println(dto);
     }
 
     @Order(value = 2)

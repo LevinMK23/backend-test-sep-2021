@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd192ed-02bd-4fa0-b286-76c5bf875443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/retrofit/TestApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/retrofit/api/MiniMarketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/retrofit/model/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/HelloWorldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestApi">
+  <component name="RunManager" selected="JUnit.HelloWorldTest.testFoo">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbrains.fabric.Test" />
       <module name="backend-test-sep-2021" />
@@ -128,6 +123,22 @@
     <configuration name="generated-requests#13" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="13" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="HelloWorldTest.testFoo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend-test-sep-2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.geekbrains" />
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.HelloWorldTest" />
+      <option name="METHOD_NAME" value="testFoo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ImgurApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend-test-sep-2021" />
       <extension name="coverage">
@@ -143,29 +154,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImgurApiTest.testCommentNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend-test-sep-2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.ImgurApiTest" />
-      <option name="METHOD_NAME" value="testCommentNotExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HelloWorldTest.testFoo" />
         <item itemvalue="Application.TestApi" />
         <item itemvalue="HTTP Request.generated-requests#13" />
         <item itemvalue="JUnit.ImgurApiTest" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="JUnit.ImgurApiTest.testCommentNotExist" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +177,7 @@
       <updated>1631898660061</updated>
       <workItem from="1631898661333" duration="9090000" />
       <workItem from="1632330477288" duration="6258000" />
-      <workItem from="1632504501572" duration="3249000" />
+      <workItem from="1632504501572" duration="3310000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 4.">
       <created>1632336595214</created>
@@ -191,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632336595214</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson 5. Retrofit">
+      <created>1632507769307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632507769307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +201,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 4." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4." />
+    <MESSAGE value="Lesson 5. Retrofit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 5. Retrofit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
