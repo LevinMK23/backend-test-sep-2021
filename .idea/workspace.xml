@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bd192ed-02bd-4fa0-b286-76c5bf875443" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/HelloWorldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/HelloWorldTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/jdbc/H2DbHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/jdbc/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/jdbc/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/geekbrains/mybatis/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/geekbrains/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +42,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -58,8 +67,8 @@
       <recent name="$PROJECT_DIR$/target" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/com/geekbrains" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/resources/com" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -82,13 +91,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HelloWorldTest.testFoo">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.fabric.Test" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.jdbc.Test" />
       <module name="backend-test-sep-2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.fabric.*" />
+          <option name="PATTERN" value="com.geekbrains.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.mybatis.Test" />
+      <module name="backend-test-sep-2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.mybatis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,13 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,28 +163,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ImgurApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="backend-test-sep-2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.geekbrains" />
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.ImgurApiTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Test (1)" />
         <item itemvalue="JUnit.HelloWorldTest.testFoo" />
         <item itemvalue="Application.TestApi" />
         <item itemvalue="HTTP Request.generated-requests#13" />
-        <item itemvalue="JUnit.ImgurApiTest" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +186,8 @@
       <updated>1631898660061</updated>
       <workItem from="1631898661333" duration="9090000" />
       <workItem from="1632330477288" duration="6258000" />
-      <workItem from="1632504501572" duration="3310000" />
+      <workItem from="1632504501572" duration="3485000" />
+      <workItem from="1632935384640" duration="3656000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 4.">
       <created>1632336595214</created>
@@ -193,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632507769307</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 5. Retrofit">
+      <created>1632507960455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632507960455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +229,15 @@
           <line>93</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geekbrains/jdbc/H2DbHelper.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
