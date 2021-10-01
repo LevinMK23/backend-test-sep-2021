@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd192ed-02bd-4fa0-b286-76c5bf875443" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/backend-test-sep-2021.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend-test-sep-2021.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/geekbrains/DbTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/geekbrains/DbTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
@@ -199,7 +199,7 @@
       <workItem from="1632330477288" duration="6258000" />
       <workItem from="1632504501572" duration="3485000" />
       <workItem from="1632935384640" duration="4078000" />
-      <workItem from="1633109637753" duration="3765000" />
+      <workItem from="1633109637753" duration="4073000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 4.">
       <created>1632336595214</created>
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633113360222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lesson 6. ORM">
+      <created>1633113550646</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633113550646</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +279,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/geekbrains/jdbc/H2DbHelper.java</url>
-          <line>51</line>
+          <line>52</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

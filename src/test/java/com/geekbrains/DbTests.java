@@ -25,12 +25,11 @@ public class DbTests {
     @Test
     void testGetProductById() {
         Products actually = productsMapper.selectByPrimaryKey(1L);
-        Products expected = Products.builder()
-                .id(1L)
-                .title("Milk")
-                .price(95)
-                .categoryId(1L)
-                .build();
+        Products expected = new Products();
+        expected.setId(1L);
+        expected.setTitle("Milk");
+        expected.setPrice(95);
+        expected.setCategoryId(1L);
 
         assertReflectiveThat(actually).isEqualTo(expected);
     }
