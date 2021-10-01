@@ -1,5 +1,6 @@
 package com.geekbrains.facade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BalanceFacade {
@@ -9,7 +10,7 @@ public class BalanceFacade {
     }
 
     public static List<Long> getBalanceHistory() {
-        return List.of();
+        return new ArrayList<>();
     }
 
     public static void pay(long sum) {

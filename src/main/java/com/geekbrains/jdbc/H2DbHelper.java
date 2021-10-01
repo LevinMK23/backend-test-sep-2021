@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -55,7 +56,7 @@ public class H2DbHelper {
     }
 
     public List<Product> getProducts() {
-        return List.of();
+        return new ArrayList<>();
     }
 
     public void close() throws Exception {

@@ -37,19 +37,6 @@ public class TestApi {
         System.out.println("product: " + product);
         System.out.println("products: " + products);
 
-        marketService.getProduct(2)
-                .enqueue(new Callback<>() {
-
-                    @Override
-                    public void onResponse(Call<ProductDto> call, Response<ProductDto> response) {
-                        System.out.println(response.body());
-                    }
-
-                    @Override
-                    public void onFailure(Call<ProductDto> call, Throwable throwable) {
-                        throwable.printStackTrace();
-                    }
-                });
 
         System.out.println(1);
         System.out.println(2);
