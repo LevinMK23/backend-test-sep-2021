@@ -11,10 +11,11 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class Test {
+
     public static void main(String[] args) {
         SqlSessionFactory sessionFactory =
                 new SqlSessionFactoryBuilder()
-                        .build(User.class.getResourceAsStream("mybatis-config.xml"));
+                        .build(Test.class.getResourceAsStream("mybatis-config.xml"));
 
         SqlSession session = sessionFactory.openSession();
 
@@ -24,7 +25,7 @@ public class Test {
 
         ProductsExample example = new ProductsExample();
         example.createCriteria()
-                .andTitleIn(List.of("Milk", "Bread"));
+                .andTitleEqualTo("Milk");
 
         List<Products> example1 = mapper.selectByExample(example);
         System.out.println(example1);
